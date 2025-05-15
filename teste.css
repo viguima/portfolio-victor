@@ -1,0 +1,623 @@
+/* estilo geral */
+
+* {
+
+    scroll-behavior: smooth;
+
+
+    /* o seletor asteristico serve para aplicar para todos os documentos do css*/
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* a tag box-sizing e para deixar ele organizados dentro da pagina box */
+
+    /* css fonte do google */
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    /* css fonte do google */
+}
+
+.btn-contato button {
+    /* nesse header foi chamado a classe e espesificado o botton para estilizar-lo por completo */
+    padding: 10px 40px;
+    /* padding para afastamento */
+    font-size: 18px;
+    /* font-size para mudar o tamanho */
+    font-weight: 800;
+    /* font-weight para mudar o o peso */
+    background-color: #00ff08;
+    /* background-color para mudar a cor de fundo do botao */
+    border: 0;
+    /* border para tirar as bordas */
+    border-radius: 30px;
+    /* border-radius para aredondar as bordas */
+    cursor: pointer;
+    /* cursor pointer para virar um dedinho o curso ao passar em cima */
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+/* tag body para personalizar o corpo nesse caso usado para mecher no fundo da pagina */
+body {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0) 80%, #00ff08);
+    height: 100%
+        /* a tag heigt e para especificar o parametros da pagina com o tamanho 100 coloco vh para pegar a pagina completa exemplos possiveis(vh.px.$) */
+}
+
+/*  itilizar a interface para bordas e parametros */
+.interface {
+    max-width: 1280px;
+    /* especificando largura maxima */
+    margin: 0 auto;
+    /* centralizando a marge com 0auto */
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+h2.TITULO {
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+}
+
+h2.TITULO span {
+    color: #00ff08;
+}
+
+
+
+--------------------------------------------------------
+
+/* estilizando o cabecalho */
+header {
+    padding: 40px 4%;
+    /* padding afastamento por padrao primro horizontal segundo vertical  */
+}
+
+/* > usado para chamar uma classe dentro de outra */
+header>.interface {
+    /* esse conjunto e para centralizar e afastar os iconis da pagina */
+    display: flex;
+    /* felixibilidade com os icones */
+    align-items: center;
+    /* centralizar na pagina */
+    justify-content: space-between;
+    /* manter o mais afastado um do outro */
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    /* remove o sublinhados do texto */
+    /*link nao tem propriedades de mudança como (tranforme,coloar) o display a baixo para tranformar sua prorpiedade*/
+    display: inline-block;
+    /* tansformando o link para block level para aceitar aplicações como (tranforme,rider,idef) */
+    transition: .2s;
+}
+
+header a:hover {
+    /* aplicaçao (:hover) e para quando o usuario passar o cursor por cima */
+    color: white;
+    transform: scale(1.08);
+    /* para aumentar o tamanho em escala /// A aplicação tranforme nao funciona em link */
+}
+
+header nav ul {
+    list-style-type: none;
+    /* remove as bolinhas ou nomeclatura da lista*/
+    /* */
+}
+
+header nav li {
+    display: inline-block;
+    /* display inline-block alina os iconis um dolado do outro */
+    padding: 0 40px;
+    /* padding afastamento por padrao primro horizontal segundo vertical  */
+}
+
+.logo img {
+    display: inline-block;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+
+
+
+
+
+/* estilo do topo do site */
+
+section.topo-do-site {
+    padding: 40px 4%;
+
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+
+}
+
+section.topo-do-site .txt-topo-site h1 {
+    color: #fff;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+section.topo-do-site .txt-topo-site h1 span {
+    color: #00ff08;
+    font-size: 40px;
+}
+
+section.topo-do-site .txt-topo-site p {
+    color: #aaaaaa;
+    margin: 20px 0px;
+}
+
+.topo-do-site .img-topo-site img {
+    box-shadow: #00ff08 0px 0px 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    transform: rotate(45deg);
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+
+
+
+
+
+/* estilo da especialidades */
+
+section.especialidades {
+    padding: 40px 4%;
+
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    color: #fff;
+    padding: 40px;
+    border: 2px solid #ffffff15;
+    margin-top: 40px;
+    border-radius: 30px;
+    transition: .5s;
+
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #ffffff8a;
+}
+
+
+.especialidades .especialidades-box i {
+    font-size: 75px;
+    color: #00ff08;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+
+
+
+
+
+
+/* estilizando sobre */
+
+section.sobre {
+    padding: 40 4%;
+
+}
+
+section.sobre .flex {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.img-sobre {
+    width: 350px;
+    height: 600px;
+    border-radius: 100px;
+    background-color: #00ff080a;
+    box-shadow: 0 0 20px #c4c4c45e;
+}
+
+.txt-sobre {
+    color: #ffffff;
+
+}
+
+.txt-sobre>h2 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+
+.txt-sobre>h2>span {
+    color: #00ff08;
+    display: block;
+}
+
+.txt-sobre>p {
+    margin: 20px 10px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.btn-sobre button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00ff08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0px 5px;
+    transition: .2s;
+
+}
+
+
+
+/* estilizando MEU PORTIFOLIP */
+section.portifolio {
+    padding: 40PX 4%;
+    box-shadow: 0PX 0PX 20pX 2PX #ffffff4d;
+    margin: 100px 0px;
+}
+
+section.portifolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    background-position: 0% 0%;
+    margin-top: 50px;
+    width: 360px;
+    height: 460px;
+    background-color: #000000;
+    background-size: cover;
+    background-position: 100% 100%;
+    transition: 3s;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0 0 20px #ffffff21;
+}
+
+.img-port:hover {
+    background-position: 0% 0%;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000007c;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700px;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* estilizando Formulario */
+
+section.formulario {
+    padding: 40PX 4%;
+    margin: 100px 0px;
+}
+
+section.formulario .flex {
+    flex-direction: column;
+    gap: 10px;
+}
+
+section.formulario .TITULO {
+    color: #fff;
+    font-size: 40px;
+    line-height: 100px;
+    text-align: center;
+}
+
+form {
+    margin-top: 40px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #222222d8;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+form input::placeholder {
+    color: #00ff08;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: #00ff08;
+    color: #000000;
+    font-weight: 700px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* estilizando rodape*/
+
+
+footer {
+    padding: 80px 4%;
+    box-shadow: 0PX 0PX 20pX 2PX #ffffff4d;
+    
+}
+
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+footer .linhadofooterbordar {
+    border-top: 2px solid #000000;
+}
+
+
+footer .line-footer p i {
+    color: #00ff08;
+    font-size: 20px;
+}
+
+
+footer .linhadofooter p a {
+    color: #fff;
+}
+
+.btn-footer button {
+   
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00ff08;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0px 5px;
+    transition: .2s;
+    
+}
+
+
+.logo-footer {
+    margin: 0px;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* OTIMIZANDO O PORTIFOLIO */
+
+@media screen and (max-width: 1000px) {
+
+    /* classes gerais */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+
+
+    /* estilo do topo do site */
+
+    section.topo-do-site {
+        padding: 20px 8%;
+
+    }
+
+
+
+    /* estilo da especialidades */
+
+    h2.TITULO {
+        color: #fff;
+        font-size: 35px;
+        line-height: 36px;
+
+    }
+
+
+    section.especialidades {
+        padding: 20px 8%;
+
+    }
+
+
+
+
+
+    /*imagems sobre*/
+
+    section.sobre {
+        padding: 80px 8%;
+
+    }
+
+    .txt-sobre>h2 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .txt-sobre>h2>span {
+        color: #00ff08;
+        display: block;
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    section.sobre .flex {
+        display: flex;
+        margin-top: 40px;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .img-sobre {
+        width: 100%;
+        max-width: 400px;
+        height: 550px;
+
+    }
+
+    .btn-sobre {
+        text-align: center;
+    }
+
+    /* portifolio */
+
+    section.portifolio {
+        padding: 40PX 8%;
+
+    }
+
+    .img-port {
+        background-position: 0% 0%;
+        margin-top: 50px;
+        width: 100%;
+        max-width: 360px;
+        height: 460px;
+        background-color: #000000;
+        background-size: cover;
+        background-position: 100% 100%;
+        transition: 3s;
+        position: relative;
+        border-radius: 50px;
+        box-shadow: 0 0 20px #ffffff21;
+    }
+
+    section.portifolio .flex {
+        gap: 40px;
+    }
+
+
+    /* formulario */
+
+    section.formulario {
+        padding: 80px 8%;
+    }
+
+    /* footer */
+
+    footer {
+        padding: 80px 8%;
+    }
+
+    /* cabeçalho */
+
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
