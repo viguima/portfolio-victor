@@ -1,212 +1,160 @@
-<!DOCTYPE html>
-
-<html lang="pt-br">
-
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="teste.css"><!--criar no head a tag link com : css ele cria altomatico uma css-->
-
-```
-<!--codigo do google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-<!--fim do codigo do google fonts -->
-<!--font do bootstrap icon-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<!--fim da font do bootstrap icon-->
-
-<title>Port_VTR-Orig</title>
-```
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Victor Guimarães Felipe: desenvolvimento Full-Stack com foco em PHP, SQL, APIs, automações e projetos pessoais de IA local e Android.">
+  <meta name="theme-color" content="#080b08">
+  <title>Victor Guimarães | Desenvolvimento Full-Stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="teste.css">
 </head>
-
-<!--inicio do body-->
-
 <body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
+    <div class="interface header-inner">
+      <a class="brand" href="#inicio" aria-label="Voltar ao início">
+        <img src="imagen/WhatsApp Image 2024-12-12 at 18.37.15-Photoroom.png" alt="Logotipo VG" width="78" height="78">
+      </a>
+      <nav class="menu-desktop" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#especialidades">Especialidades</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="btn btn-small header-cta" href="mailto:victor36123@hotmail.com?subject=Contato%20profissional%20-%20Portf%C3%B3lio">Fale comigo <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+    </div>
+  </header>
 
-```
-<header><!--entrada do header-->
-    <div class="interface"><!--entrada da div interface-->
-        <div class="logo"><!--entrada da div logo-->
-            <a href="#"><!--ancora para voltar ao inicio quando clicar na logo-->
-                <img src="imagen/WhatsApp Image 2024-12-12 at 18.37.15-Photoroom.png"
-                    alt="logo do Potf"><!--entrada da logo por img-->
-            </a>
-        </div><!--fechamento da div logo-->
+  <main id="conteudo">
+    <section id="inicio" class="hero">
+      <div class="interface hero-grid">
+        <div>
+          <p class="eyebrow"><span class="status-dot"></span> Desenvolvimento Full-Stack · Suzano, SP</p>
+          <h1>Construindo sistemas, <span>integrando soluções.</span></h1>
+          <p class="lead">Sou Victor Guimarães Felipe, Desenvolvedor Full-Stack Júnior com maior atuação em Back-end PHP, SQL e automação de processos. Transformo demandas operacionais em funcionalidades utilizadas no dia a dia.</p>
+          <div class="actions">
+            <a class="btn" href="#projetos">Explorar projetos <i class="bi bi-arrow-down-right" aria-hidden="true"></i></a>
+            <a class="btn btn-outline" href="https://www.linkedin.com/in/victor-guimar%C3%A3es-418243303/" target="_blank" rel="noopener noreferrer">LinkedIn <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="hero-tags" aria-label="Principais tecnologias">
+            <span>PHP / PDO</span><span>SQL</span><span>JavaScript</span><span>APIs REST</span><span>Linux</span>
+          </div>
+        </div>
+        <div class="hero-portrait">
+          <div class="portrait-frame"><img src="imagen/img-braço-cruzados.png" alt="Victor Guimarães" loading="eager"></div>
+          <div class="portrait-caption"><i class="bi bi-code-slash" aria-hidden="true"></i> Back-end, integrações e automações</div>
+        </div>
+      </div>
+    </section>
 
+    <section id="especialidades" class="section">
+      <div class="interface">
+        <p class="eyebrow">Áreas de atuação</p>
+        <h2 class="section-title">Minhas <span>especialidades.</span></h2>
+        <div class="specialties-grid">
+          <article class="feature-card">
+            <i class="bi bi-code-square feature-icon" aria-hidden="true"></i>
+            <h3>Desenvolvimento Full-Stack</h3>
+            <p>Manutenção e evolução de aplicações corporativas com PHP, PDO, JavaScript, Bootstrap e bancos de dados relacionais.</p>
+          </article>
+          <article class="feature-card">
+            <i class="bi bi-diagram-3 feature-icon" aria-hidden="true"></i>
+            <h3>APIs e automação</h3>
+            <p>Integrações REST, consultas SQL, tarefas agendadas no Linux e notificações via Power Automate e Microsoft Teams.</p>
+          </article>
+          <article class="feature-card">
+            <i class="bi bi-cpu feature-icon" aria-hidden="true"></i>
+            <h3>Inteligência artificial local</h3>
+            <p>Projeto pessoal com Node.js, Python, Ollama, comandos por voz e comunicação cliente-servidor em tempo real.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <nav class="menu-desktop"><!--tag nav de navegação para o menu do nosso cabeçalho-->
-            <ul>
-                <li><a href="#">inicio</a></li>
-                <li><a href="#id-daespecialidade">Especialidades</a></li>
-                <li><a href="#id-sobre">Sobre</a></li>
-                <li><a href="#id-projetos">Projetos</a></li>
-            </ul>
-        </nav><!--fechamento da tag nav-->
+    <section id="sobre" class="section about-section">
+      <div class="interface about-grid">
+        <div class="about-photo"><img src="imagen/WhatsApp Image 2024-12-11 at 20.45.28.jpeg" alt="Victor Guimarães em foto profissional" loading="lazy"></div>
+        <div>
+          <p class="eyebrow">Sobre mim</p>
+          <h2 class="section-title align-left">Muito prazer, <span>sou Victor.</span></h2>
+          <p>Sou formado em Análise e Desenvolvimento de Sistemas pela UMC e atuo como Desenvolvedor Full-Stack Júnior na Tera Soluções desde maio de 2026.</p>
+          <p>Meu foco é a lógica Back-end, modelagem de banco de dados e integrações. Participo de melhorias em sistemas existentes e já conduzi a etapa inicial de um módulo corporativo, desde a necessidade de negócio até a implementação.</p>
+          <p>Nos projetos pessoais, exploro IA local e desenvolvimento Android. Busco continuar evoluindo tecnicamente e contribuir com equipes de engenharia de software.</p>
+          <div class="social-links">
+            <a href="https://github.com/viguima" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Victor"><i class="bi bi-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/victor-guimar%C3%A3es-418243303/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Victor"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+            <a href="mailto:victor36123@hotmail.com" aria-label="Enviar e-mail para Victor"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div class="btn-contato"><!--div criada para fazer um botao-->
-            <a href="#id-contato"><!--semptre usar link para levao ao inicio ao clica-->
-                <button>contato</button>
-            </a>
-        </div><!--btn-contato-->
-    </div><!--interface-->
-</header><!--header cabeçalho-->
+    <section id="projetos" class="section projects-section">
+      <div class="interface">
+        <p class="eyebrow">Experiências e projetos</p>
+        <h2 class="section-title">Trabalho que <span>resolve problemas.</span></h2>
+        <p class="section-intro">Uma visão resumida de entregas profissionais e projetos pessoais. As experiências corporativas são descritas sem compartilhar código ou dados internos.</p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-meta"><span class="type-tag">Experiência profissional</span><i class="bi bi-hdd-network" aria-hidden="true"></i></div>
+            <h3>G-POPS</h3>
+            <p>Módulo de inventário de Pontos de Presença, desenvolvido inicialmente a partir de controles em planilhas. Inclui modelagem SQL, cadastros, mapa e alertas automatizados de baterias.</p>
+            <div class="tech-tags"><span>PHP</span><span>SQL</span><span>Linux Cron</span><span>Power Automate</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-meta"><span class="type-tag">Experiência profissional</span><i class="bi bi-arrow-repeat" aria-hidden="true"></i></div>
+            <h3>GMUD / Reboot</h3>
+            <p>Evolução colaborativa de gestão de mudanças: conexão com a API do Zendesk, edição restrita ao autor, dashboard e aprovações hierárquicas com retorno automático ao sistema.</p>
+            <div class="tech-tags"><span>PHP</span><span>MySQL</span><span>Zendesk API</span><span>Power Automate</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-meta"><span class="type-tag personal">Projeto pessoal</span><i class="bi bi-robot" aria-hidden="true"></i></div>
+            <h3>Jarvis</h3>
+            <p>Assistente de inteligência artificial local em desenvolvimento, com servidor Node.js, cliente Python, modelos Ollama e integração de voz e ferramentas.</p>
+            <div class="tech-tags"><span>Node.js</span><span>Python</span><span>Ollama</span><span>Socket.IO</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-meta"><span class="type-tag personal">Projeto pessoal</span><i class="bi bi-phone" aria-hidden="true"></i></div>
+            <h3>OtakuBeats</h3>
+            <p>Aplicativo Android em desenvolvimento para registro de histórico musical e interação em salas compartilhadas.</p>
+            <div class="tech-tags"><span>Kotlin</span><span>Jetpack Compose</span><span>Firebase</span></div>
+          </article>
+          <article class="project-card project-featured">
+            <div class="project-meta"><span class="type-tag personal">Projeto web</span><i class="bi bi-globe2" aria-hidden="true"></i></div>
+            <h3>Leomar Construções</h3>
+            <p>Site institucional para apresentar serviços e projetos de uma empresa de construção civil.</p>
+            <div class="tech-tags"><span>Web</span><span>Institucional</span></div>
+            <a class="project-link" href="https://www.leomarconstrucoes.com.br/" target="_blank" rel="noopener noreferrer">Visitar site <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-
-<main>
-    <section class="topo-do-site">
-        <div class="interface">
-            <div class="flex">
-                <div class="txt-topo-site">
-                    <h1>Trasformando Ideias em Realidade Digital<span>.</span> <br> </h1>
-                    <p>Criatividade e Inovação andam lado a lado. Com uma combinação única de design impactante,
-                        funcionalidade intuitiva e otimização para resultados, estou pronto para criar a presença
-                        online dos seus sonhos
-                    </p>
-                    <div class="btn-contato">
-                        <a href="#id-contato" target="_self">
-                            <button>entre em contato</button>
-                        </a>
-                    </div>
-                </div><!--txt topo site-->
-
-                <div class="img-topo-site">
-                    <img src="imagen/img-braço-cruzados.png" alt="#">
-                </div> <!--img topo site-->
-            </div> <!--felx-->
-        </div><!--interface-->
-    </section><!--topo do site-->
-
-    <section class="especialidades">
-        <div class="inteface">
-            <h2 id="id-daespecialidade" class="TITULO">MINHAS <SPAN>ESPECIALIDADES.</SPAN></h2>
-            <div class="flex">
-                <div class="especialidades-box">
-                    <i class="bi bi-code-square"></i>
-                    <h3>Website</h3>
-                    <p>Qual a primeira impressão que você quer causar nos seus visitantes? Com minhas habilidades em
-                        HTML, CSS e JavaScript, posso criar uma jornada online única e personalizada para cada
-                        usuário do seu site. Desde o momento em que eles acessam sua página inicial até o instante
-                        em que realizam uma compra ou entram em contato com você, eu cuido de cada detalhe para
-                        garantir uma experiência fluida e agradável.</p>
-                </div><!--especialidades-box-->
-                <div class="especialidades-box">
-                    <i class="bi bi-bag-check"></i>
-                    <h3>Loja Online</h3>
-                    <p>A tecnologia está transformando a forma como as pessoas compram. Com minhas habilidades em
-                        HTML, CSS, JavaScript e SQL, eu posso te ajudar a aproveitar todo o potencial do e-commerce.
-                        Criei lojas online que aumentam as vendas, reduzem custos e otimizam processos. Se você
-                        busca uma presença online forte e competitiva, eu sou o profissional ideal para você.</p>
-                </div><!--especialidades-box-->
-                <div class="especialidades-box">
-                    <i class="bi bi-bag-check"></i>
-                    <h3>Blog</h3>
-                    <p>Quer construir sites incríveis, com experiência em transformar ideias em sites funcionais e
-                        esteticamente agradáveis. Dominando HTML, CSS e JavaScript, crio soluções personalizadas e
-                        responsivas que impulsionam os blogs dos meus clientes sempre buscando aprimorar minhas
-                        habilidades e inspirar outros desenvolvedores.</p>
-                </div><!--especialidades-box-->
-            </div><!--flex-->
-        </div><!--inteface-->
-    </section><!--especialidade-->
-
-    <section id="id-sobre" class="sobre">
-        <div class="interface">
-            <div class="flex">
-                <div class="img-sobre">
-                    <img class="img-sobre" src="imagen/WhatsApp Image 2024-12-11 at 20.45.28.jpeg" alt="">
-                </div><!--img-sobre"-->
-                <div class="txt-sobre">
-                    <h2>Muito Prazer, <span>Sou Victor Guimarães</span></h2>
-                    <p> Desenvolvedor web apaixonado por criar soluções digitais inovadoras.</p>
-                    <p>determinado e proativo na busca por novos desafios. Com sólida experiência em HTML,
-                        CSS, JavaScript, php, Python e MYSQL, desenvolvo soluções web eficientes e escaláveis.
-                        Durante meu primeiro ano na faculdade, tive a oportunidade de liderar o desenvolvimento de
-                        um projeto web de uma churrascaria, demonstrando minhas habilidades em
-                        css, html e eficiência organizacional.
-                        Sou apaixonado por tecnologia e busco constantemente aprimorar meus conhecimentos.
-                        Disponível para novas oportunidades e poder contribuir com projetos inovadores.</p>
-                    <div class="btn-sobre">
-                        <!--<a href="#"><button><i class="bi bi-instagram"></i></button></a>-->
-                        <a href="https://github.com/viguima" target="_blank"><button><i class="bi bi-github"></i></button></a>
-                        <a href="https://www.linkedin.com/in/victor-guimar%C3%A3es-418243303/"
-                            target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                    </div><!--btn-sobre-->
-                </div><!--txt-sobre-->
-            </div><!--flex-->
-        </div><!--interface-->
-    </section><!--sobre-->
-
-    <section id="id-projetos" class="portifolio">
-        <div class="interface">
-            <h2 class="TITULO">MEU<SPAN>PORTIFOLIO.</SPAN></h2>
-            <div class="flex">
-                <a href="projeto01/tabalho/primeiroprojeto-ad48b336dc49bd10ae89d5d40b6061bbc2d5d92a/index.html" target="_blank">
-                <div class="img-port"
-                    style="background-image: url(imagen/fotoprojeto01.png);">
-                    <div class="overlay">projeto 01</div> </a>
-                </div><!--img-port-->
-                <a href="#" target="_blank">
-                <div class="img-port"
-                    style="background-image: url();">
-                    <div class="overlay">projeto 02</div> </a>
-                </div><!--img-port-->
-                <a href="#" target="_blank">
-                <div class="img-port"
-                    style="background-image: url(imagen/WhatsApp\ Image\ 2024-12-12\ at\ 18.37.15-Photoroom.png);">
-                    <div class="overlay">projeto 03</div></a>
-                </div><!--img-port-->
-            </div><!--flex-->
-        </div><!--interface-->
-    </section><!--portifolio-->
-
-    <SEction id="id-contato" class="formulario">
-        <div class="interface">
-            <h2 class="TITULO">FALA<SPAN>COMIGO.</SPAN></h2>
-            <form action="#">
-                <input type="text" name="" id="" placeholder="Nome completo" required>
-                <input type="text" name="" id="" placeholder="Email" required>
-                <input type="text" name="" id="" placeholder="Tell">
-                <textarea name="" id="" placeholder="Comentario" required></textarea>
-                <div class="btn-enviar">
-                    <input type="submit" value="enviar">
-                </div><!--btn-enviar-->
-            </form>
-            <div class="flex">
-            </div><!--flex-->
-        </div><!--interface-->
-    </SEction><!--formulario-->
-</main>
-
-<footer>
-    <div class="interface">
-        <div class="line-footer">
-            <div class="flex">
-                <div class="logo-footer">
-                    <img class="logo-footer" src="imagen/WhatsApp Image 2024-12-12 at 18.37.15-Photoroom.png"
-                        alt="#">
-                </div><!--logo-footer-->
-                <div class="btn-footer">
-                    <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-                    <a href="#"><button><i class="bi bi-youtube"></i></button></a>
-                    <a href="https://www.linkedin.com/in/victor-guimar%C3%A3es-418243303/"
-                        target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                </div><!--btn-footer-->
-            </div><!--flex-->
-        </div><!--line-footer-->
-
-        <div class="linhadofooterbordar">
-            <p><i class="bi bi-envelope"></i><a href="mailto:victor36123@hotmail.com">victor36123@hotmail.com</a>
-            </p>
-        </div><!--linhadofooterbordar-->
-    </div><!--interface-->
-</footer>
-```
-
+    <section id="contato" class="section contact-section">
+      <div class="interface contact-panel">
+        <div>
+          <p class="eyebrow">Contato</p>
+          <h2 class="section-title align-left">Vamos <span>conversar?</span></h2>
+          <p>Tem uma oportunidade em desenvolvimento Full-Stack ou quer conversar sobre meus projetos? Entre em contato por e-mail ou LinkedIn.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn" href="mailto:victor36123@hotmail.com?subject=Oportunidade%20Full-Stack%20-%20Contato%20via%20portf%C3%B3lio">Enviar e-mail <i class="bi bi-envelope" aria-hidden="true"></i></a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/victor-guimar%C3%A3es-418243303/" target="_blank" rel="noopener noreferrer">LinkedIn <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="interface footer-inner">
+      <a class="footer-brand" href="#inicio" aria-label="Voltar ao início">VG<span>.</span></a>
+      <p>Victor Guimarães Felipe · Desenvolvedor Full-Stack · Suzano, SP</p>
+      <a href="mailto:victor36123@hotmail.com">victor36123@hotmail.com</a>
+    </div>
+  </footer>
 </body>
-<!--fechamento do body-->
 </html>
